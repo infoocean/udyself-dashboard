@@ -1,15 +1,48 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
+import {Collapse, Nav, NavLink} from 'react-bootstrap';
 import { faTrash} from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
+import TimingDetails from '../RideHistory/TimingDetails';
+import EmployeeDetails from '../RideHistory/EmployeeDetails';
+import Notifications from '../RideHistory/Notofications';
+import Control from '../RideHistory/Controls';
+import Canclation from '../RideHistory/Canclation';
 
 
 // import {DashboardLayout} from './Layout';
 
 const CompletedRide = () => {
+    const [open, setOpen] = useState(false);
   return (
     <>
-      <div>
-           <h4>Completed Ride</h4> 
+      <div className="completedridedetails">
+      <Collapse in={open}>
+            <div id="activerideinformation">
+            <Router>
+                <Nav className="ridedetails justify-content-center">
+                    <Link  className="link" to="/">Timing Schedule</Link>
+                    <Link  className="link" to="employeedetails">Employ Details</Link>
+                    <Link  className="link" to="/notifications">Notifications</Link>
+                    <Link  className="link" to="/control">Controls</Link>
+                    <Link  className="link" to="/canclation">Canclation</Link>
+                </Nav>
+                <Switch>
+                <div className="ridedata">
+                    <Route exact path="/" component={TimingDetails}/>
+                    <Route path="/employeedetails" component={EmployeeDetails}/>
+                    <Route path="/notifications" component={Notifications}/>
+                    <Route path="/controls" component={Control}/>
+                    <Route path="/canclation" component={Canclation}/>
+                </div>
+                </Switch>
+            </Router>
+            </div>
+        </Collapse>
+        
+      
+           <h4 className="pt-3">Completed Ride</h4> 
            <table class=' mt-4 table table-bordered table-condensed table-striped table-hover'>
                 <thead>
                 <tr>
@@ -29,7 +62,9 @@ const CompletedRide = () => {
                 <tbody>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
                     <td>1</td>
-                    <td>0186CS171099</td>
+                    <td  onClick={() => setOpen(!open)}
+                    aria-controls="example-collapse-text"
+                    aria-expanded={open}>0186CS171099</td>
                     <td>Shubham</td>
                     <td>91316347079</td>
                     <td>Bhopal</td>

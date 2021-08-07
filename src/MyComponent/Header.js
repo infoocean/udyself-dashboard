@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserTie, faBell, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
 import './Style.css';
 import { useState } from 'react';
+import brandlogo from './img/logo.jpeg';
 
 // import { Collapse } from 'bootstrap'
 export default function Header() {
@@ -16,7 +17,7 @@ export default function Header() {
         <div className="header" >
             <Navbar id="topnav"  expand="lg" bg="" variant="dark" style={{height:"60px"}}>
                 {/* <Container> */}
-                <Navbar.Brand id="nav-brand" href="#home" className="ms-5">wekashi</Navbar.Brand>
+                <Navbar.Brand id="nav-brand" href="#home" className="ms-5"><img src={brandlogo} alt="" width="80px"/></Navbar.Brand>
                 {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
                 <Navbar id="responsive-navbar-nav" style={{color:"white"}}>
                     <Nav className="me-auto">

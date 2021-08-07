@@ -78,17 +78,11 @@ export default function NavSidebarf() {
             </ul>
           </NavDropdown> 
           </li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-          <li className="nav-item"><Link to="/MyProfile" className="nav-link">MyProfile</Link></li>
-        </ul>
+          <li className="nav-item"><Link to="/link" className="nav-link">Link1</Link></li>
+          <li className="nav-item"><Link to="/link" className="nav-link">Link1</Link></li>
+          <li className="nav-item"><Link to="/link" className="nav-link">Link1</Link></li>
+          <li className="nav-item"><Link to="/link" className="nav-link">Link1</Link></li>
+         </ul>
       </Navbar>
     </div>
     <div className="outsideOfMenu">
@@ -128,9 +122,6 @@ export default function NavSidebarf() {
           </Route>
           <Route path="/home2">
             <Link3 />
-          </Route>
-          <Route path="/home3">
-            <Link4/>
           </Route>
         </Switch>
       </div>

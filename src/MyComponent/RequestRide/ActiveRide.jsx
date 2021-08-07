@@ -24,7 +24,7 @@ const ActiveRide = () => {
                     <Link  className="link" to="employeedetails">Employ Details</Link>
                     <Link  className="link" to="/notifications">Notifications</Link>
                     <Link  className="link" to="/control">Controls</Link>
-                    <Link  className="link" to="/canclations">Canclation</Link>
+                    <Link  className="link" to="/canclation">Canclation</Link>
                 </Nav>
                 <Switch>
                 <div className="ridedata">
