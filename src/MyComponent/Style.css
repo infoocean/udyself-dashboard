@@ -70,6 +70,8 @@ ul li{
     line-height: 35px;
     list-style: none;
     padding: 0%;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul li a:hover{
@@ -534,13 +536,14 @@ tbody tr{
 }
 
 #newriderequest{
-    background-color: rgb(238, 236, 212);
+    background-color:white;
 }
 
 .headingtitle{
-    background-color:white;
+    background-color:rgb(121, 117, 163);
     padding-top: 15px;
     padding-bottom: 15px;
+    color: white;
 }
 
 .form-control-label {

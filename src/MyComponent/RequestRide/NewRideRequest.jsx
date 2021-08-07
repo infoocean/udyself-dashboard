@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSubscript, faSuperscript, faTrash} from '@fortawesome/free-solid-svg-icons';
+import { faSuperscript, faTrash} from '@fortawesome/free-solid-svg-icons';
 import { faBell} from '@fortawesome/free-solid-svg-icons';
 
 // import {DashboardLayout} from './Layout';
@@ -9,59 +9,65 @@ const NewRideRequest = () => {
   return (
     <>
     <div id="newriderequest">
-        <h4 className="headingtitle justify-content-center">New Ride Request <FontAwesomeIcon icon={faBell}/><faSuperscript>3</faSuperscript></h4>  
+        <h4 className="headingtitle justify-content-center">New Ride Request <FontAwesomeIcon icon={faBell}/><faSuperscript>4</faSuperscript></h4>  
         <div class="container pt-3 pb-3">
             <div class="main-body">
                 <div class="row gutters-sm">
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-3 mb-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column align-items-center justify-content">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="70"/>
-                                    <div class="mt-3">
-                                            <h6>Name : Shubham Jaiswal</h6>
-                                             <p class="text-secondary mb-1">Email : sj2585097@gmail.com</p>
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="50"/>
+                                    <div class="mt-3" style={{textAlign:'left'}}>
+                                            <span><b>Name :</b> Shubham Jaiswal</span>
+                                             <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
-                                             <h6>Pickup Location :<span> Vijay Nagar Indore</span></h6>
-                                             <h6> Date :<span>20 july Mon 2017</span></h6>
-                                             <h6>Time : <span> 8:00 AM</span></h6>
-                                             <input type="checkbox"/> Accept
+                                             <input type="checkbox"/><span>Accept</span>
                                         </div>
                                 </div>
                              </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-3 mb-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="70"/>
-                                        <div class="mt-3">
-                                            <h6>Name : Shubham Jaiswal</h6>
-                                             <p class="text-secondary mb-1">Email : sj2585097@gmail.com</p>
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="50"/>
+                                        <div class="mt-3" style={{textAlign:'left'}}>
+                                            <span><b>Name :</b> Shubham Jaiswal</span>
+                                             <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
-                                             <h6>Pickup Location :<span> Vijay Nagar Indore</span></h6>
-                                             <h6> Date :<span>20 july Mon 2017</span></h6>
-                                             <h6>Time : <span> 8:00 AM</span></h6>
-                                             <input type="checkbox"/> Accept
+                                             <input type="checkbox"/><span> Accept</span>
                                         </div>
                                 </div>
                              </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
+                    <div class="col-lg-3 mb-3">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column align-items-center text-center">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="70"/>
-                                        <div class="mt-3">
-                                            <h6>Name : Shubham Jaiswal</h6>
-                                             <p class="text-secondary mb-1">Email : sj2585097@gmail.com</p>
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="50"/>
+                                        <div class="mt-3 " style={{textAlign:'left'}}>
+                                            <span><b>Name :</b> Shubham Jaiswal</span>
+                                             <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
-                                             <h6>Pickup Location :<span> Vijay Nagar Indore</span></h6>
-                                             <h6> Date :<span>20 july Mon 2017</span></h6>
-                                             <h6>Time : <span> 8:00 AM</span></h6>
-                                             <input type="checkbox"/> Accept
+                                             <input type="checkbox"/><span> Accept</span>
+                                        </div>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="50"/>
+                                        <div class="mt-3" style={{textAlign:'left'}}>
+                                            <span><b>Name :</b> Shubham Jaiswal</span>
+                                             <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
+                                             <p class="text-muted font-size-sm mt-0 pt-0">Number : 7089413024</p>
+                                             <input type="checkbox"/><span> Accept</span>
                                         </div>
                                 </div>
                              </div>
