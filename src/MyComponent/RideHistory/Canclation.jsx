@@ -28,7 +28,7 @@ const Canclation=()=>{
           </Form.Group>
           </Col>
           </Row>
-          <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+          <Form.Group as={Row} className="mb-3 mt-3" controlId="formPlaintextEmail">
               <Col md={4}></Col>
               <Col md="3" align="center">
               <Form.Control className="btn" type="submit" value="Cancel" onClick={(e)=>{

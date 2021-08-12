@@ -2,10 +2,78 @@ import React from 'react';
 import {Row,Col,Collapse,Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 export default function ExistingEmployee() {
+
+    const [open, setOpen] = useState(false);
     
     return (
+        <>
+
+        <div className="editpart">
+        <Collapse in={open}>
+            <div id="livelocation" style={{backgroundColor:'white', margin:'50px'}} className="p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="well well-sm text-center">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <div className="title pb-3" style={{textAlign:'left'}}>
+                                        <h5 style={{color:'red'}}>Hii, Shubham</h5>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-10 col-md-offset-1 w-100">
+                                            <input id="origin-input" class="controls" type="text" placeholder="Rewa Indore MP"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group pt-2">
+                                        <div class="col-md-10 col-md-offset-1 w-100">
+                                            <input id="destination-input" class="controls" type="text" placeholder="Bhopal India Mp"/>
+                                        </div>
+                                    </div>
+
+                                    {/*
+                                    <div class="form-group">
+                                        <div class="col-md-10 col-md-offset-1">
+                                             <div id="mode-selector" class="controls">
+                                                <input type="radio" name="type" id="changemode-walking" checked="checked" />
+                                                    <label for="changemode-walking">Walking</label>
+                                                    <input type="radio" name="type" id="changemode-transit" />
+                                                    <label for="changemode-transit">Transit</label>
+                                                    <input type="radio" name="type" id="changemode-driving" />
+                                                    <label for="changemode-driving">Driving</label>
+                                              </div>     
+                                        </div>
+                                    </div>
+                                    */}
+                                    <div class="form-group pt-2">
+                                        <div class="col-md-12 text-center pt-2 pb-2">
+                                            <button type="submit" class="btn btn-primary w-100">Confirm</button>
+                                        </div>
+                                    </div>
+                                    <div className="title pt-3" style={{textAlign:'left'}}>
+                                        <h5 style={{color:'blue'}}>Distance Major,</h5>
+                                        <span>Total Distance : 12 KM</span><br/>
+                                        <span>Total Time: 1 H 22 M</span>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="map" class="map">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.4995220078467!2d75.68595271393406!3d22.597814437741906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39625791ce3d439d%3A0x4662b0242a2e125!2sHousing%20Board%20Colony%2C%20Pithampur!5e0!3m2!1sen!2sin!4v1628755408560!5m2!1sen!2sin"
+                            width="440" height="400" style={{border:'1'}}  allowfullscreen="" loading="lazy"></iframe> 
+                            <initMap/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </Collapse>
+        </div>
         
         <div className="query-table">
           <h4>All My Existing Employee</h4>
@@ -44,7 +112,8 @@ export default function ExistingEmployee() {
                     <td>05-12-2015 / 2:44</td>
                     <td></td>
                     <td>
-                    <button className="btn btn-warning"><FontAwesomeIcon icon={faEdit}/></button>
+                    <button className="btn btn-warning"  onClick={() => setOpen(!open)} aria-controls="example-collapse-text"
+                     aria-expanded={open}><FontAwesomeIcon icon={faEdit}/></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
                         }}><FontAwesomeIcon icon={faTrash}/></button>
@@ -76,7 +145,8 @@ export default function ExistingEmployee() {
                     <td>02-11-1999 / 10:45</td>
                     <td></td>
                     <td>
-                    <button className="btn btn-warning"><FontAwesomeIcon icon={faEdit}/></button>
+                    <button className="btn btn-warning" onClick={(e) =>{
+                    document.querySelector("#editboxDriver").classList.add('clickedit');}}><FontAwesomeIcon icon={faEdit}/></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
                         }}><FontAwesomeIcon icon={faTrash}/></button>
@@ -133,6 +203,6 @@ export default function ExistingEmployee() {
             </tbody>
         </table>
     </div>
-
+    </>
     )
 }

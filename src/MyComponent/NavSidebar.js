@@ -49,9 +49,9 @@ export default function NavSidebarf() {
           </Link></li>
           <Collapse in={open}>
           <div id="collapse-riderequest">
-            <li><NavDropdown.Item><Link to="/newriderequest" className="nav-link">New Ride Request</Link></NavDropdown.Item></li>
-            <li><NavDropdown.Item><Link to="/activeride" className="nav-link">Active Ride Request</Link></NavDropdown.Item></li>
-            <li><NavDropdown.Item><Link to="/completedride" className="nav-link">Completed Ride</Link></NavDropdown.Item></li>
+            <li><NavDropdown.Item><Link to="/newriderequest" className="nav-link sublink">New Ride Request</Link></NavDropdown.Item></li>
+            <li><NavDropdown.Item><Link to="/activeride" className="nav-link sublink">Active Ride Request</Link></NavDropdown.Item></li>
+            <li><NavDropdown.Item><Link to="/completedride" className="nav-link sublink ">Completed Ride</Link></NavDropdown.Item></li>
           </div>
           </Collapse> 
           <li className="nav-item"><Link  className="nav-link dropdown" onClick={() => setdropdown(!dropdown)}
@@ -60,8 +60,8 @@ export default function NavSidebarf() {
           </Link></li>
           <Collapse in={dropdown}>
           <div id="collapse-employee">
-            <li><NavDropdown.Item><Link to="/manageemployee/addnewemployee" className="nav-link">Add New Employee</Link></NavDropdown.Item></li>
-            <li><NavDropdown.Item><Link to="/manageemployee/existingemployee" className="nav-link">All Employee List</Link></NavDropdown.Item></li>
+            <li><NavDropdown.Item><Link to="/manageemployee/addnewemployee" className="nav-link sublink">Add New Employee</Link></NavDropdown.Item></li>
+            <li><NavDropdown.Item><Link to="/manageemployee/existingemployee" className="nav-link sublink">All Employee List</Link></NavDropdown.Item></li>
           </div>
           </Collapse> 
           <li className="nav-item"><Link to="/billing" className="nav-link" >Billing History</Link></li>
