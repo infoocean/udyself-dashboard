@@ -4,7 +4,7 @@ const Control=()=>{
     return(
         <>
         <div className="timing-details">
-         emp details
+         controls
         </div>
         </>
     )

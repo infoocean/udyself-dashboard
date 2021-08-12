@@ -13,7 +13,7 @@ const NewRideRequest = () => {
         <div class="container pt-3 pb-3">
             <div class="main-body">
                 <div class="row gutters-sm">
-                    <div class="col-lg-3 mb-3">
+                    <div class="col-lg-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column">
@@ -23,13 +23,14 @@ const NewRideRequest = () => {
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
-                                             <input type="checkbox"/><span>Accept</span>
+                                             <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
+                                             <span><input type="checkbox"/> Accept</span>
                                         </div>
                                 </div>
                              </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-3">
+                    <div class="col-lg-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column">
@@ -39,13 +40,14 @@ const NewRideRequest = () => {
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
-                                             <input type="checkbox"/><span> Accept</span>
+                                             <p className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
+                                             <span><input type="checkbox"/> Accept</span>
                                         </div>
                                 </div>
                              </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-3">
+                    <div class="col-lg-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column">
@@ -55,13 +57,14 @@ const NewRideRequest = () => {
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
-                                             <input type="checkbox"/><span> Accept</span>
+                                            <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
+                                            <span><input type="checkbox"/> Accept</span>
                                         </div>
                                 </div>
                              </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-3">
+                    <div class="col-lg-3 mb-2">
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex flex-column">
@@ -71,7 +74,8 @@ const NewRideRequest = () => {
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm mt-0 pt-0">Number : 7089413024</p>
                                              <hr/>
-                                             <input type="checkbox"/> <span> Accept</span>
+                                             <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
+                                             <span><input type="checkbox"/> Accept</span>
                                         </div>
                                 </div>
                              </div>

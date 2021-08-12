@@ -4,7 +4,7 @@ const EmployeeDetails=()=>{
     return(
         <>
         <div className="empdetails">
-        <div class="container pt-3">
+        <div class="container pt-5">
             <div class="main-body">
                 <div class="row gutters-sm">
                     <div class="col-lg-3 mb-3">
@@ -17,6 +17,7 @@ const EmployeeDetails=()=>{
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
+                                             <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
                                              <input type="checkbox"/> <span>Select</span>
                                             </div>
                                 </div>
@@ -33,6 +34,7 @@ const EmployeeDetails=()=>{
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
+                                             <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
                                              <input type="checkbox"/> <span>Select</span>
                                         </div>
                                 </div>
@@ -49,6 +51,7 @@ const EmployeeDetails=()=>{
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
+                                             <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
                                              <input type="checkbox"/> <span>Select</span>
                                         </div>
                                 </div>
@@ -65,6 +68,7 @@ const EmployeeDetails=()=>{
                                              <p class="text-secondary mb-0">Email : sj2585097@gmail.com</p>
                                              <p class="text-muted font-size-sm">Number : 7089413024</p>
                                              <hr/>
+                                             <p  className="pb-2 mb-0"><i class="fas fa-street-view"></i> Bhopal ...................... <i class="fas fa-map-marker-alt"></i> Indore</p>
                                              <input type="checkbox"/> <span>Select</span>
                                         </div>
                                 </div>

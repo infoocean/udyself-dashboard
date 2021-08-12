@@ -53,11 +53,6 @@ export default function ExistingEmployee() {
                                             <button type="submit" class="btn btn-primary w-100">Confirm</button>
                                         </div>
                                     </div>
-                                    <div className="title pt-3" style={{textAlign:'left'}}>
-                                        <h5 style={{color:'blue'}}>Distance Major,</h5>
-                                        <span>Total Distance : 12 KM</span><br/>
-                                        <span>Total Time: 1 H 22 M</span>
-                                    </div>
                                 </fieldset>
                             </form>
                         </div>
@@ -65,7 +60,7 @@ export default function ExistingEmployee() {
                     <div class="col-md-6">
                         <div id="map" class="map">
                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.4995220078467!2d75.68595271393406!3d22.597814437741906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39625791ce3d439d%3A0x4662b0242a2e125!2sHousing%20Board%20Colony%2C%20Pithampur!5e0!3m2!1sen!2sin!4v1628755408560!5m2!1sen!2sin"
-                            width="440" height="400" style={{border:'1'}}  allowfullscreen="" loading="lazy"></iframe> 
+                            width="440" height="400" style={{border:'1px solid black'}}  allowfullscreen="" loading="lazy"></iframe> 
                             <initMap/>
                         </div>
                     </div>

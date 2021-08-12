@@ -33,7 +33,7 @@ const CompletedRide = () => {
                     <Route exact path="/" component={TimingDetails}/>
                     <Route exact path="/employeedetails" component={EmployeeDetails}/>
                     <Route exact path="/notifications" component={Notifications}/>
-                    <Route exact path="/controls" component={Control}/>
+                    <Route exact path="/control" component={Control}/>
                     <Route exact path="/canclation" component={Canclation}/>
                 </div>
                 </Switch>

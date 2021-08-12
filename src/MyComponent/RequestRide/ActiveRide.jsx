@@ -28,11 +28,11 @@ const ActiveRide = () => {
                 </Nav>
                 <Switch>
                 <div className="ridedata">
-                    <Route exact path="/" component={TimingDetails}/>
-                    <Route exact path="/employeedetails" component={EmployeeDetails}/>
-                    <Route exact path="/notifications" component={Notifications}/>
-                    <Route exact path="/controls" component={Control}/>
-                    <Route exact path="/canclation" component={Canclation}/>
+                    <Route  exact path="/" component={TimingDetails}/>
+                    <Route  path="/employeedetails" component={EmployeeDetails}/>
+                    <Route  path="/notifications" component={Notifications}/>
+                    <Route  path="/control" component={Control}/>
+                    <Route  path="/canclation" component={Canclation}/>
                 </div>
                 </Switch>
             </Router>
