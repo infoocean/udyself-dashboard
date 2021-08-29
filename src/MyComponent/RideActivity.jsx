@@ -1,12 +1,10 @@
 import React from 'react';
 
 const RideActivity=()=>{
-    return (
-        <>
-        <div className="rideactivity">
-          hii
-        </div>
-        </>
-    )
-}
+  return(
+    <>
+    <p>RideActivity</p>
+    </>
+  );
+};
 export default RideActivity;

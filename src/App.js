@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css';
-import Header from './MyComponent/Header';
 import  './MyComponent/Style.css';
-import Sidebar from './MyComponent/DashbordMenu';
+import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
+import Loginform from './Login';
+import Adminpanel from './Adminpanel';
 
 const App =() => {
   return (
-    <div className="App">
-        <Header/>
-        <Sidebar/>
-    </div>
+     <>
+     <Switch>
+          <Route exat path="/" component={Loginform}/>
+    </Switch>
+    </>
   );
 };
 
