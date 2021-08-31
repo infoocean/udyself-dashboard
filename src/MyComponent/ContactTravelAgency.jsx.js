@@ -2,10 +2,11 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import {Row,Col,Form } from 'react-bootstrap';
+
 export default function ContactTravelAgency() {
     return (
       <div className="Contact-section">
-      <h5>Contact Travel Agency</h5> 
+      <h5 className="text-center mt-3">Contact Travel Agency</h5> 
       <div id="QueryForm">
       <Form>
           <Row>
@@ -36,7 +37,7 @@ export default function ContactTravelAgency() {
           </Col>
           <Col md={12}>
           <Form.Group as={Row} controlId="formPlaintextEmail">
-              <Form.Label className='add-labels' column sm="12">
+              <Form.Label className='add-labels mt-3' column sm="12">
               Enter Your Message :
               </Form.Label>
               <Col sm="12">
@@ -45,7 +46,7 @@ export default function ContactTravelAgency() {
           </Form.Group>
           </Col>
           </Row>
-          <Form.Group as={Row} className="mb-2 mt-2" controlId="formPlaintextEmail">
+          <Form.Group as={Row} className="mb-2 mt-3" controlId="formPlaintextEmail">
               <Col md={4}></Col>
               <Col md="3" align="center">
               <Form.Control className="btn" type="submit" value="Contact" onClick={(e)=>{
@@ -55,8 +56,8 @@ export default function ContactTravelAgency() {
           </Form.Group>
       </Form>
       </div>
-      <h4 className="title mt-4 ">Our Old Contact History</h4> 
-            <table class=' mt-4 table table-bordered table-condensed table-striped table-hover'>
+      <h4 className="title mt-4 ">Our Old Contact History Details</h4> 
+            <table class=' mt-4 table table-bordered table-condensed table-striped table-hover text-center'>
                 <thead>
                 <tr>
                    <th>SE NO</th>
@@ -140,7 +141,7 @@ export default function ContactTravelAgency() {
                 </tbody>
             </table>
 
-            <div id="deletebox">       
+            <div id="deletebox" className="text-center">       
                 <h4>Are You Sure To Delete!</h4>
                     <button className="btn" onClick={(e) =>{
                         document.querySelector("#deletebox").classList.remove('click')

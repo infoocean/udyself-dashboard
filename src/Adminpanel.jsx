@@ -1,13 +1,12 @@
-import React from 'react';
-import Header from './MyComponent/Header';
-import Sidebar from './MyComponent/DashbordMenu';
+import React from 'react'
+import Header from './Header'
+import NavSidebar from './NavSidebar'
 
-const  Adminpanel=()=>{
-    return(
-        <>
-        <Header/>
-        <Sidebar/>
-        </>
-    );
-};
-export default Adminpanel;
+export default function Adminpanel() {
+    return (
+        <div>
+            <Header/>
+            <NavSidebar/>
+        </div>
+    )
+}

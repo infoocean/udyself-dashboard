@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
-import {Collapse, Nav, NavLink} from 'react-bootstrap';
+import {Collapse, Nav} from 'react-bootstrap';
 import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import TimingDetails from '../RideHistory/TimingDetails';
@@ -42,8 +42,8 @@ const CompletedRide = () => {
         </Collapse>
         
       
-           <h4 className="pt-3">Completed Ride</h4> 
-           <table class=' mt-4 table table-bordered table-condensed table-striped table-hover'>
+           <h4 className="pt-3 text-center">Completed Ride</h4> 
+           <table class=' mt-4 table table-bordered table-condensed table-striped table-hover text-center'>
                 <thead>
                 <tr>
                    <th>SE NO</th>
@@ -148,7 +148,7 @@ const CompletedRide = () => {
                 </tbody>
             </table>
 
-               <div id="deletebox">       
+               <div id="deletebox" className="text-center">       
                 <h4>Are You Sure To Delete!</h4>
                     <button className="btn" onClick={(e) =>{
                         document.querySelector("#deletebox").classList.remove('click')

@@ -1,12 +1,7 @@
 import React from 'react';
 import './Login.css';
-import brandlogo from './MyComponent/img/logo.jpeg';
 import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
-import Createaccount from './Createaccount';
-import Forgatpassword from './Forgatpassword';
 import { useState } from 'react';
-import Adminpanel from './Adminpanel';
-
 
 const Loginform=()=>{
 
@@ -31,7 +26,7 @@ const Loginform=()=>{
         <div className="container-box">
         <div className="form--user__icon">
             <div className="icon--img">
-                <span className="glyphicon glyphicon-user"><img  className="imgs" src= {brandlogo} /></span>
+                <span className="glyphicon glyphicon-user"></span>
             </div>
         </div>
         <h4 className="text-center">Login Form</h4>
@@ -55,13 +50,7 @@ const Loginform=()=>{
             </div>
         </form>
     </div>
-    <switch>
-    <Route path="/adminpanel" component={Adminpanel}/>
-    <Route path="/createaccount" component={Createaccount}/>
-    <Route path="/forgatpassword" component={Forgatpassword}/>
-    </switch>
-        </>   
-    )
-
+    </>   
+    );
 };
 export default Loginform;

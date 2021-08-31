@@ -9,7 +9,7 @@ const NewRideRequest = () => {
   return (
     <>
     <div id="newriderequest">
-        <h4 className="headingtitle justify-content-center">New Ride Request <FontAwesomeIcon icon={faBell}/><faSuperscript>4</faSuperscript></h4>  
+        <h4 className="headingtitle text-center">New Ride Request <FontAwesomeIcon icon={faBell}/><faSuperscript>4</faSuperscript></h4>  
         <div class="container pt-3 pb-3">
             <div class="main-body">
                 <div class="row gutters-sm">
@@ -87,8 +87,8 @@ const NewRideRequest = () => {
     </div>
         
      <div>
-           <h5 className="mt-3"> All New Ride Request Details</h5> 
-           <table class=' mt-3 table table-bordered table-condensed table-striped table-hover'>
+           <h5 className="mt-4 text-center"> All New Ride Request Details</h5> 
+           <table class=' mt-4 table table-bordered table-condensed table-striped table-hover text-center'>
                 <thead>
                 <tr>
                    <th>SE NO</th>
@@ -191,7 +191,7 @@ const NewRideRequest = () => {
                 </tbody>
             </table>
 
-               <div id="deletebox">       
+               <div id="deletebox" className="text-center">       
                 <h4>Are You Sure To Delete!</h4>
                     <button className="btn" onClick={(e) =>{
                         document.querySelector("#deletebox").classList.remove('click')

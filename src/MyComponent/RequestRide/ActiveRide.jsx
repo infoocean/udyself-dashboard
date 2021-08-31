@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
-import {Collapse, Nav, NavLink} from 'react-bootstrap';
+import {Collapse, Nav} from 'react-bootstrap';
 import TimingDetails from '../RideHistory/TimingDetails';
 import EmployeeDetails from '../RideHistory/EmployeeDetails';
 import Notifications from '../RideHistory/Notofications';
@@ -12,7 +12,9 @@ import Canclation from '../RideHistory/Canclation';
 // import {DashboardLayout} from './Layout';
 
 const ActiveRide = () => {
+
     const [open, setOpen] = useState(false);
+
   return (
     <>
       <div className="activeridedetails">
@@ -29,18 +31,18 @@ const ActiveRide = () => {
                 <Switch>
                 <div className="ridedata">
                     <Route  exact path="/" component={TimingDetails}/>
-                    <Route  path="/employeedetails" component={EmployeeDetails}/>
-                    <Route  path="/notifications" component={Notifications}/>
-                    <Route  path="/control" component={Control}/>
-                    <Route  path="/canclation" component={Canclation}/>
+                    <Route  exact path="/employeedetails" component={EmployeeDetails}/>
+                    <Route  exact path="/notifications" component={Notifications}/>
+                    <Route  exact path="/control" component={Control}/>
+                    <Route  exact path="/canclation" component={Canclation}/>
                 </div>
                 </Switch>
             </Router>
             </div>
         </Collapse>
         
-           <h4 className="pt-4">Active Ride Details</h4> 
-           <table class=' mt-4 table table-bordered table-condensed table-striped table-hover'>
+           <h4 className="pt-4 text-center">Active Ride Details</h4> 
+           <table class=' mt-4 table table-bordered table-condensed table-striped table-hover text-center'>
                 <thead>
                 <tr>
                    <th>SE NO</th>
@@ -145,7 +147,7 @@ const ActiveRide = () => {
                 </tbody>
             </table>
 
-               <div id="deletebox">       
+               <div id="deletebox" className="text-center">       
                 <h4>Are You Sure To Delete!</h4>
                     <button className="btn" onClick={(e) =>{
                         document.querySelector("#deletebox").classList.remove('click')

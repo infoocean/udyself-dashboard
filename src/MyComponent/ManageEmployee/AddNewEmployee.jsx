@@ -1,12 +1,10 @@
 import React from 'react';
-import { Form, Collapse } from 'react-bootstrap';
+import { Collapse } from 'react-bootstrap';
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
-import initMap from '../../map';
+
 
 function AddNewEmployee(){
-
+    
     const [open, setOpen] = useState(false);
 
     return(
@@ -79,7 +77,7 @@ function AddNewEmployee(){
             <div class="container-fluid px-1 mx-auto">
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-9 col-11">
-                        <h4><span>Add New Employee</span></h4>
+                        <h4 className="text-center mt-3"><span>Add New Employee</span></h4>
                         <div class="form pt-5">
                             <form class="form-card">
                                 <div class="row justify-content-between text-left">

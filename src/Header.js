@@ -2,14 +2,13 @@ import React from 'react';
 import { Navbar, Nav, Dropdown, Collapse} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserTie, faBell, faCommentAlt } from '@fortawesome/free-solid-svg-icons';
-import './Style.css';
 import { useState } from 'react';
-import brandlogo from './img/logo.jpeg';
+import brandlogo from './MyComponent/img/logo.jpeg';
 
 // import { Collapse } from 'bootstrap'
 export default function Header() {
 
-    let [login, setLogin] = useState(false);
+    const [login, setLogin] = useState(false);
     const [open, setOpen] = useState(false);
 
     return (
@@ -61,7 +60,7 @@ export default function Header() {
 
                     {/* <Nav.Link href="#deets"> <FontAwesomeIcon icon={faCoffee} /> More deets</Nav.Link> */}
                     <Nav.Link eventKey={2} >
-                    <div className="bg-primary picon" style={{color:"white"}} onClick={()=>{setLogin(!login);setOpen(false)}} aria-controls="example-collapse-text-2"
+                    <div className="bg-primary picon text-center" style={{color:"white"}} onClick={()=>{setLogin(!login);setOpen(false)}} aria-controls="example-collapse-text-2"
                     aria-expanded={login}><FontAwesomeIcon icon={faUserTie} /> </div> 
                     </Nav.Link>
                     <Collapse in={login}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row,Col,Collapse,Form } from 'react-bootstrap';
+import {Collapse } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
@@ -71,8 +71,8 @@ export default function ExistingEmployee() {
         </div>
         
         <div className="query-table">
-          <h4>All My Existing Employee</h4>
-        <div id="deletebox">       
+          <h4 className="text-center mt-3">All My Existing Employee</h4>
+        <div id="deletebox" className="text-center">       
             <h4>Are You Sure To Delete!</h4>
             <button className="btn" onClick={(e) =>{
                 document.querySelector("#deletebox").classList.remove('click')
@@ -82,7 +82,7 @@ export default function ExistingEmployee() {
                 }}>No</button>
         </div>
 
-        <table class=' mt-4 table table-bordered table-condensed table-striped table-hover'>
+        <table class=' mt-5 table table-bordered table-condensed table-striped table-hover text-center'>
             <thead>
                 <tr>
                    <th>SE NO</th>

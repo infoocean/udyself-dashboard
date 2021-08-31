@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import  './MyComponent/Style.css';
-import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
-import Loginform from './Login';
-import Adminpanel from './Adminpanel';
+import './Style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header';
+import NavSidebar from './NavSidebar';
 
 const App =() => {
   return (
      <>
-     <Switch>
-          <Route exat path="/" component={Loginform}/>
-    </Switch>
+     {/*header part*/}
+     <Header/>
+     {/*side bar part with main part content**/}
+     <NavSidebar/>
     </>
   );
 };

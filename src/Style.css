@@ -8,13 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 
-/*sidebar menu style*/
-#dashmenu{
-    width: 15%;
-    float: left;
-    position: relative;
-}
 body{
+
     overflow-x: hidden;
 }
 
@@ -24,6 +19,24 @@ body{
     background-color: white;
     
 }
+
+#topnav{
+    width: 100%;
+    min-height: 50px;
+    background: white;
+    box-shadow: 0px 0px 10px grey;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+/*sidebar menu style*/
+#dashmenu{
+    width: 15%;
+    float: left;
+    position: relative;
+}
+
 #nav-brand{
     background: white;
     color: #0d6efd;
@@ -34,19 +47,12 @@ body{
     margin: 0 !important;
     padding: 0%;
 }
+
 ul{
     padding-left: 0;
     width: 100%;
 }
-#topnav{
-    width: 100%;
-    min-height: 50px;
-    background: white;
-    box-shadow: 0px 0px 10px grey;
-    position: fixed;
-    z-index: 2;
-    
-}
+
 #sidedrop1 li a{
     margin: 0;
 }
@@ -291,30 +297,6 @@ ul li a:hover{
     #responsive-navbar-nav{
         width: 85%;
     }
-}
-
-
-/*----------------*/
-.canvasjs-chart-toolbar{
-    display: none;
-   
-    /* padding: 5px !important; */
-}
-#piechart-continer{
-    width: 40%;
-    min-height: 300px;
-    float: left;
-    margin: 4% 4%;
-}
-.canvasjs-chart-credit, .canvasjs-chart-toolbar{
-    display: none;
-}
-#bar-chart{
-    width: 40%;
-    height: 400px;
-    float: left;
-    margin: 4% 4%;
-    /* padding: 5px !important; */
 }
 
 /*----------------*/

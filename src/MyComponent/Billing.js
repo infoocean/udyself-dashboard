@@ -9,7 +9,7 @@ const Billing =()=>{
     return(
     <>
         <div className="billing-section">
-            <h5>Search Your Billing History</h5> 
+            <h5 className="text-center">Search Your Billing History</h5> 
             <div id="QueryForm">
             <Form>
                 <Row>
@@ -65,8 +65,8 @@ const Billing =()=>{
                 </Form.Group>
             </Form>
             </div>
-            <h4 className="title mt-5 ">Our Billing History</h4> 
-            <table id="table-to-xls" class='mt-4 table table-bordered table-condensed table-striped table-hover'>
+            <h4 className="title mt-3">Our Billing History</h4> 
+            <table id="table-to-xls" class='mt-4 table table-bordered table-condensed table-striped table-hover text-center'>
                 <thead>
                 <tr>
                    <th>SE NO</th>
@@ -166,7 +166,7 @@ const Billing =()=>{
                     sheet="billing"
                     buttonText="print"/>
         
-            <div id="deletebox">       
+            <div id="deletebox" className="text-center">       
                 <h4>Are You Sure To Delete!</h4>
                     <button className="btn" onClick={(e) =>{
                         document.querySelector("#deletebox").classList.remove('click')
