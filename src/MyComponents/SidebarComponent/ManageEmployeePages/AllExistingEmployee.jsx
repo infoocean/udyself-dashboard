@@ -1,16 +1,12 @@
 import React from 'react';
 import {Collapse } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 export default function ExistingEmployee() {
-
     const [open, setOpen] = useState(false);
     
     return (
         <>
-
         <div className="editpart">
         <Collapse in={open}>
             <div id="livelocation" style={{backgroundColor:'white', margin:'50px'}} className="p-4">
@@ -108,10 +104,10 @@ export default function ExistingEmployee() {
                     <td></td>
                     <td>
                     <button className="btn btn-warning"  onClick={() => setOpen(!open)} aria-controls="example-collapse-text"
-                     aria-expanded={open}><FontAwesomeIcon icon={faEdit}/></button>
+                     aria-expanded={open}><i class="fas fa-edit"></i></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row" data-href="http://tutorialsplane.com">
@@ -124,10 +120,10 @@ export default function ExistingEmployee() {
                     <td>02-11-1999 / 10:45</td>
                     <td></td>
                     <td>
-                    <button className="btn btn-warning"><FontAwesomeIcon icon={faEdit}/></button>
+                    <button className="btn btn-warning"><i class="fas fa-edit"></i></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row" data-href="http://tutorialsplane.com">
@@ -141,10 +137,10 @@ export default function ExistingEmployee() {
                     <td></td>
                     <td>
                     <button className="btn btn-warning" onClick={(e) =>{
-                    document.querySelector("#editboxDriver").classList.add('clickedit');}}><FontAwesomeIcon icon={faEdit}/></button>
+                    document.querySelector("#editboxDriver").classList.add('clickedit');}}><i class="fas fa-edit"></i></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row" data-href="http://tutorialsplane.com">
@@ -157,10 +153,10 @@ export default function ExistingEmployee() {
                     <td>02-11-1999 / 10:45</td>
                     <td></td>
                     <td>
-                    <button className="btn btn-warning"><FontAwesomeIcon icon={faEdit}/></button>
+                    <button className="btn btn-warning"><i class="fas fa-edit"></i></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row" data-href="http://tutorialsplane.com">
@@ -173,10 +169,10 @@ export default function ExistingEmployee() {
                     <td>02-11-1999 / 10:45</td>
                     <td></td>
                     <td>
-                    <button className="btn btn-warning"><FontAwesomeIcon icon={faEdit}/></button>
+                    <button className="btn btn-warning"><i class="fas fa-edit"></i></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row" data-href="http://tutorialsplane.com">
@@ -189,10 +185,10 @@ export default function ExistingEmployee() {
                     <td>02-11-1999 / 10:45</td>
                     <td></td>
                     <td>
-                    <button className="btn btn-warning"><FontAwesomeIcon icon={faEdit}/></button>
+                    <button className="btn btn-warning"><i class="fas fa-edit"></i></button>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
             </tbody>

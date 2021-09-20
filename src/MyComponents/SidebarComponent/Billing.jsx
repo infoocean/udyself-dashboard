@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 import {Row,Col,Form } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash} from '@fortawesome/free-solid-svg-icons';
 
 const Billing =()=>{
 
@@ -95,7 +93,7 @@ const Billing =()=>{
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -110,7 +108,7 @@ const Billing =()=>{
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>  
+                        }}><i class="fas fa-trash"></i></button>  
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -124,7 +122,7 @@ const Billing =()=>{
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -138,7 +136,7 @@ const Billing =()=>{
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -152,7 +150,7 @@ const Billing =()=>{
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 </tbody>

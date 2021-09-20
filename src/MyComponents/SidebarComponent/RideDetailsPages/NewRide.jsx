@@ -1,15 +1,11 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSuperscript, faTrash} from '@fortawesome/free-solid-svg-icons';
-import { faBell} from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
 
-// import {DashboardLayout} from './Layout';
-
-const NewRideRequest = () => {
-  return (
+function NewRide() {
+    return (
+       
     <>
     <div id="newriderequest">
-        <h4 className="headingtitle text-center">New Ride Request <FontAwesomeIcon icon={faBell}/><faSuperscript>4</faSuperscript></h4>  
+        <h4 className="headingtitle text-center">New Ride Request <i class="fas fa-bell"></i><faSuperscript>4</faSuperscript></h4>  
         <div class="container pt-3 pb-3">
             <div class="main-body">
                 <div class="row gutters-sm">
@@ -119,7 +115,7 @@ const NewRideRequest = () => {
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -136,7 +132,7 @@ const NewRideRequest = () => {
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>  
+                        }}><i class="fas fa-trash"></i></button>  
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -152,7 +148,7 @@ const NewRideRequest = () => {
                    <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -168,7 +164,7 @@ const NewRideRequest = () => {
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -184,7 +180,7 @@ const NewRideRequest = () => {
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 
@@ -205,7 +201,6 @@ const NewRideRequest = () => {
 
         </div>
     </>
-  )
+    )
 }
-
-export default NewRideRequest;
+export default NewRide;

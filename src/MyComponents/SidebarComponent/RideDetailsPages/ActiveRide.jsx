@@ -1,23 +1,23 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import {BrowserRouter as Router, Link, Route, Switch} from 'react-router-dom';
 import {Collapse, Nav} from 'react-bootstrap';
-import { faTrash} from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+/*
 import TimingDetails from '../RideHistory/TimingDetails';
 import EmployeeDetails from '../RideHistory/EmployeeDetails';
 import Notifications from '../RideHistory/Notofications';
 import Control from '../RideHistory/Controls';
 import Canclation from '../RideHistory/Canclation';
-
-
 // import {DashboardLayout} from './Layout';
+*/
 
-const CompletedRide = () => {
+const ActiveRide = () => {
     const [open, setOpen] = useState(false);
+
   return (
     <>
-      <div className="completedridedetails">
+      <div className="activeridedetails">
+      {/*
       <Collapse in={open}>
             <div id="activerideinformation">
             <Router>
@@ -30,19 +30,19 @@ const CompletedRide = () => {
                 </Nav>
                 <Switch>
                 <div className="ridedata">
-                    <Route exact path="/" component={TimingDetails}/>
-                    <Route exact path="/employeedetails" component={EmployeeDetails}/>
-                    <Route exact path="/notifications" component={Notifications}/>
-                    <Route exact path="/control" component={Control}/>
-                    <Route exact path="/canclation" component={Canclation}/>
+                    <Route  exact path="/" component={TimingDetails}/>
+                    <Route  exact path="/employeedetails" component={EmployeeDetails}/>
+                    <Route  exact path="/notifications" component={Notifications}/>
+                    <Route  exact path="/control" component={Control}/>
+                    <Route  exact path="/canclation" component={Canclation}/>
                 </div>
                 </Switch>
             </Router>
             </div>
         </Collapse>
+        */}
         
-      
-           <h4 className="pt-3 text-center">Completed Ride</h4> 
+           <h4 className="pt-4 text-center">Active Ride Details</h4> 
            <table class=' mt-4 table table-bordered table-condensed table-striped table-hover text-center'>
                 <thead>
                 <tr>
@@ -64,84 +64,84 @@ const CompletedRide = () => {
                     <td>1</td>
                     <td  onClick={() => setOpen(!open)}
                     aria-controls="example-collapse-text"
-                    aria-expanded={open}>0186CS171099</td>
+                    aria-expanded={open} >0186CS171099</td>
                     <td>Shubham</td>
-                    <td>91316347079</td>
+                    <td>7089413024</td>
                     <td>Bhopal</td>
-                    <td>5:90 PM</td>
+                    <td>9:40 AM</td>
                     <td>Indore</td>
-                    <td>9:90 AM</td>
+                    <td>11:30 PM</td>
                     <td>20-22-2029</td>
                     <td></td>
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
                     <td>2</td>
                     <td>0186CS171099</td>
                     <td>Shubham</td>
-                    <td>91316347079</td>
+                    <td>7089413024</td>
                     <td>Bhopal</td>
-                    <td>5:90 PM</td>
+                    <td>9:40 AM</td>
                     <td>Pune</td>
-                    <td>8:00 AM</td>
+                    <td>9:40 AM</td>
                     <td>20-22-2029</td>
                     <td></td>
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>  
+                        }}><i class="fas fa-trash"></i></button>  
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
                     <td>3</td>
                     <td>0186CS171099</td>
                     <td>Shubham</td>
-                    <td>91316347079</td>
+                    <td>7089413024</td>
                     <td>JabalPur</td>
-                    <td>8:00 AM</td>
+                    <td>9:40 AM</td>
                     <td>Indore</td>
-                    <td>8:00 AM</td>
+                    <td>9:40 AM</td>
                     <td>20-22-2029</td>
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
                     <td>4</td>
                     <td>0186CS171099</td>
-                    <td>Shubham</td>
-                    <td>91316347079</td>
                     <td>Bangalore</td>
-                    <td>8:00 AM</td>
+                    <td>Shubham</td>
+                    <td>7089413024</td>
+                    <td>9:40 AM</td>
                     <td>Indore</td>
-                    <td>8:00 AM</td>
+                    <td>9:40 AM</td>
                     <td>20-22-2029</td>
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
                     <td>5</td>
                     <td>0186CS171099</td>
-                    <td>Shubham</td>
-                    <td>91316347079</td>
                     <td>Rewa</td>
-                    <td>8:00 AM</td>
+                    <td>Shubham</td>
+                    <td>7089413024</td>
+                    <td>9:40 AM</td>
                     <td>Indore</td>
-                    <td>8:00 AM</td>
+                    <td>9:40 AM</td>
                     <td>20-22-2029</td>
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 
@@ -166,4 +166,4 @@ const CompletedRide = () => {
   )
 }
 
-export default CompletedRide;
+export default ActiveRide;

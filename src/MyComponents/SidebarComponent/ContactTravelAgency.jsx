@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import {Row,Col,Form } from 'react-bootstrap';
 
 export default function ContactTravelAgency() {
@@ -82,7 +80,7 @@ export default function ContactTravelAgency() {
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -96,7 +94,7 @@ export default function ContactTravelAgency() {
                     <td>
                     <button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>  
+                        }}><i class="fas fa-trash"></i></button>  
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -109,7 +107,7 @@ export default function ContactTravelAgency() {
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -122,7 +120,7 @@ export default function ContactTravelAgency() {
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 <tr class="table-row"data-href="http://tutorialsplane.com">
@@ -135,7 +133,7 @@ export default function ContactTravelAgency() {
                     <td></td>
                     <td><button className="btn btn-danger" onClick={(e) =>{
                     document.querySelector("#deletebox").classList.add('click');
-                        }}><FontAwesomeIcon icon={faTrash}/></button>
+                        }}><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
                 </tbody>

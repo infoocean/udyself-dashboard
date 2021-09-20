@@ -2,9 +2,7 @@ import React from 'react';
 import { Collapse } from 'react-bootstrap';
 import { useState } from 'react';
 
-
 function AddNewEmployee(){
-    
     const [open, setOpen] = useState(false);
 
     return(
